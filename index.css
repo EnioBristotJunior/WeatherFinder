@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Handlee&family=Kalam&family=Mynerve&family=Solitreo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Open+Sans:wght@300;600&display=swap");
+
+/*Título*/
+
+/*
+font-family: 'Caveat', cursive; -Muito Boa-
+font-family: 'Handlee', cursive; -No-
+font-family: 'Kalam', cursive; -Boa-
+font-family: 'Mynerve', cursive; -No-
+font-family: 'Solitreo', cursive; -Praticamente igual a terceira 
+*/
+
+/*Corpo*/
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+:root {
+  --roxo: #8707ff;
+  --verdin: #1cfeba;
+  --roxin: #473bf0;
+  --blue: #004fff;
+  --blackaloy: #161a1e;
+  --cinzaaloy: #9a9a9a;
+  --cinzavideo: #2f2841;
+  --blackvideo: #201b2c;
+  --laranja: #ff451c;
+  --vermelho: #d31521;
+}
+
+/*Tudo*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./imgs/cabana-1.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.main-content {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px;
+  /* margin-top: 10%;
+  margin-left: 50px;
+  margin-right: 50px;
+   */
+  margin-left: 50px;
+  align-items: center;
+}
+
+/*Backgrouns*/
+
+.nublado {
+  background-image: url(./imgs/dark_sunset_clouds.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.chuva {
+  background-image: url(./imgs/raining.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.sol {
+  background-image: url(./imgs/back_project.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.neve {
+  background-image: url(./imgs/snowing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.cabana {
+  background-image: url(./imgs/cabana-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/*Lateral*/
+
+.main-content .menu {
+  min-height: 615px;
+  backdrop-filter: blur(6px) saturate(150%);
+  -webkit-backdrop-filter: blur(6px) saturate(150%);
+  background-color: rgba(7, 11, 19, 0.72);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+.menu p {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.sub_title_cabana {
+  padding-left: 20px;
+  color: #ff4f5d;
+}
+
+.sub_title_sol {
+  padding-left: 20px;
+  color: var(--laranja);
+}
+
+.sub_title_chuva {
+  padding-left: 20px;
+  color: #7d8b98;
+}
+
+.sub_title_neve {
+  padding-left: 20px;
+  color: #d3af59;
+}
+
+.sub_title_nublado {
+  padding-left: 20px;
+  color: #2c2491;
+}
+
+.text_cabana {
+  color: #ff4f5d;
+}
+
+.text_sol {
+  color: var(--laranja);
+}
+
+.text_chuva {
+  color: #7d8b98;
+}
+
+.text_neve {
+  color: #d3af59;
+}
+
+.text_nublado {
+  color: #2c2491;
+}
+
+.altera {
+  display: flex;
+  gap: 20px;
+}
+
+.altera ion-icon {
+  transition: 1s ease;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.altera ion-icon:hover {
+  color: #9a9a9a;
+}
+
+/*Fundos*/
+
+.menu .typeWheathers {
+  display: flex;
+  gap: 20px;
+  color: #ffffff;
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.menu .typeWheathers a {
+  cursor: pointer;
+
+  transition: 1s ease;
+}
+
+.menu .typeWheathers a:hover {
+  color: #9a9a9a;
+}
+
+/*Inputs*/
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+}
+
+/*Cabana*/
+.input_cabana {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #2f2841;
+  color: #ff4f5d;
+  transition: 0.4s;
+}
+
+.input_cabana::placeholder {
+  color: #9e9ea7;
+}
+
+.input_cabana:hover {
+  box-shadow: 0 0 0 0.15vw #ff4f5d;
+}
+
+.input_cabana:focus {
+  box-shadow: 0 0 0 0.15vw #ff4f5d;
+}
+
+/*Sol*/
+
+.input_sol {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #2f2841;
+  color: var(--laranja);
+  transition: 0.4s;
+}
+
+.input_sol::placeholder {
+  color: #9e9ea7;
+}
+
+.input_sol:hover {
+  box-shadow: 0 0 0 0.15vw var(--laranja);
+}
+
+.input_sol:focus {
+  box-shadow: 0 0 0 0.15vw var(--laranja);
+}
+
+/*Chuva*/
+
+.input_chuva {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #2f2841;
+  color: #7d8b98;
+  transition: 0.4s;
+}
+
+.input_chuva::placeholder {
+  color: #9e9ea7;
+}
+
+.input_chuva:hover {
+  box-shadow: 0 0 0 0.15vw #7d8b98;
+}
+
+.input_chuva:focus {
+  box-shadow: 0 0 0 0.15vw #7d8b98;
+}
+
+/*Neve*/
+
+.input_neve {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #2f2841;
+  color: #d3af59;
+  transition: 0.4s;
+}
+
+.input_neve::placeholder {
+  color: #9e9ea7;
+}
+
+.input_neve:hover {
+  box-shadow: 0 0 0 0.15vw #d3af59;
+}
+
+.input_neve:focus {
+  box-shadow: 0 0 0 0.15vw #d3af59;
+}
+
+/*Nublado*/
+
+.input_nublado {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #2f2841;
+  color: #2c2491;
+  transition: 0.4s;
+}
+
+.input_nublado::placeholder {
+  color: #9e9ea7;
+}
+
+.input_nublado:hover {
+  box-shadow: 0 0 0 0.15vw #2c2491;
+}
+
+.input_nublado:focus {
+  box-shadow: 0 0 0 0.15vw #2c2491;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+/*Botão*/
+
+/*Cabana*/
+
+.btn_cabana {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #ff4f5d;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.btn_cabana:hover {
+  box-shadow: 7px 5px 56px -14px #ff4f5d;
+}
+
+.btn_cabana:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #ff4f5d;
+}
+
+/*Sol*/
+
+.btn_sol {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: var(--laranja);
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.btn_sol:hover {
+  box-shadow: 7px 5px 56px -14px var(--laranja);
+}
+
+.btn_sol:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px var(--laranja);
+}
+
+/*Chuva*/
+
+.btn_chuva {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #7d8b98;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.btn_chuva:hover {
+  box-shadow: 7px 5px 56px -14px #7d8b98;
+}
+
+.btn_chuva:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #7d8b98;
+}
+
+/*Neve*/
+
+.btn_neve {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #d3af59;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.btn_neve:hover {
+  box-shadow: 7px 5px 56px -14px #d3af59;
+}
+
+.btn_neve:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #d3af59;
+}
+
+/*Nublado*/
+
+.btn_nublado {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #2c2491;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.btn_nublado:hover {
+  box-shadow: 7px 5px 56px -14px #2c2491;
+}
+
+.btn_nublado:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #2c2491;
+}
+
+/*Texto do Tempo*/
+
+.main-content .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  color: #ffffff;
+}
