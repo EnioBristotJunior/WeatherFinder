@@ -1,3 +1,12 @@
+function enterKeyPressed(event) {
+  if (event.keyCode == 13) {
+    buscarTempo();
+    return true;
+  } else {
+    return false;
+  }
+}
+
 //Função para buscar o tempo
 function buscarTempo() {
   cidade = document.getElementById("cidade").value;
